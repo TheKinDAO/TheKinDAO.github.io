@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+    display: flex;
+    background: #b1ad84;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 800px;
+    min-height: 730px;
+    border-radius: 2%;
+    margin: auto;
+    font-size: 30px
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+    background-color: #fff;
+    border: 5px solid#b1ad84;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 10%;
+}
+
+#player {
+  padding: 1rem;
+}
+
+body {
+    display: flex;
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+form {
+    position: relative;
+    right: 160px;
+    top: 50px;
+}
+
+select {
+    position: relative;
+    left: 5px;
+    font-size: 30px;
+    min-width: 70px;
+    height: 50px;
+}

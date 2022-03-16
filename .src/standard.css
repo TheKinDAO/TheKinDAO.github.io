@@ -1,0 +1,32 @@
+/* body {background:#eee; font-family:"Courier New";} */
+body {background:#efefef; font-family:"Courier New";}
+
+/*
+ * font-family:Menlo, Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;}
+ */
+.header, .footer {font-family:arial, san-serif;}
+
+/* #main {background:#ffa; border:1em solid #ff8;} */
+/* span.h1,span.h2,span.h3,span.h4 {background:#ccc;} */
+
+/* span.rel {background:#eef; color:#000;} */
+span.date {background:#000; color:#fff;}
+
+/*
+ * span.quot {background:#ffe;}
+ * span.quot2 {background:#eff;}
+ * span.quot3 {background:#fef;}
+ */
+
+span.shell {background:#ddd;}
+span.cmnt {background:#dfd;}
+span.type {background:#9bf;}
+
+/* internal links */
+a {color:#000; text-decoration:underline dashed #CCF; ;}
+a:hover, a:focus {text-decoration:underline dashed #000;
+                  color:#FFF; background:#009;}
+
+/* external links */
+a.ext {color:#009; text-decoration:none;}
+a.ext:hover, a.ext:focus {color:#FFF; background:#009;}
