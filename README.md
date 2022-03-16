@@ -1,2 +1,1 @@
-# TheKinDAO.github.io
-TheKinDAO.com
+[TheKinDAO.github.io](https://TheKinDAO.github.io)
