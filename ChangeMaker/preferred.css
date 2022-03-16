@@ -55,3 +55,12 @@ select {
     min-width: 70px;
     height: 50px;
 }
+
+#save {
+  position: relative;
+  right: 70px;
+  top: 60px;
+  font-size: 25px;
+  width: 140px;
+  height: 60px;
+}
