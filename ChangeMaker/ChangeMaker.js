@@ -36,7 +36,7 @@ function init() {
         }
     }
 
-    document.getElementById('tictactoe').appendChild(board);
+    document.getElementById('changemaker').appendChild(board);
     startNewGame();
 }
 
@@ -66,21 +66,6 @@ function startNewGame() {
             box.innerHTML = EMPTY;
         });
     }
-}
-
-// Check if a win or not
-function win(clicked) {
-    // Get all cell classes
-    var memberOf = clicked.className.split(/\s+/);
-    for (var i = 0; i < memberOf.length; i++) {
-        var testClass = '.' + memberOf[i];
-        var items = contains('#tictactoe ' + testClass, tile);
-        // winning condition: tile == N_SIZE
-        if (items.length == N_SIZE) {
-            return true;
-        }
-    }
-    return false;
 }
 
 // Helper function to check if NodeList from selector has a particular text
