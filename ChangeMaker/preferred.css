@@ -67,6 +67,8 @@ select {
 
 @media only screen and (max-width: 600px){
   .container {
+    position: relative;
+    top: 60;
     display: flex;
     background: #b1ad84;
     align-content: center;
