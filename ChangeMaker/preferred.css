@@ -72,8 +72,8 @@ select {
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    min-width: 800px;
-    min-height: 700px;
+    max-width: 80px;
+    max-height: 70px;
     border-radius: 2%;
     margin: auto;
     font-size: 30px
