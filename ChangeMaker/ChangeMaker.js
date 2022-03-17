@@ -30,6 +30,7 @@ function init() {
             }
             cell.identifier = identifier;
             cell.addEventListener('click', set);
+            cell.addEventListener("dblclick", remov);
             row.appendChild(cell);
             boxes.push(cell);
             identifier += identifier;
@@ -101,6 +102,12 @@ function set() {
     tile = select.value;
     document.getElementById('tile').textContent = tile;
 }
+
+  function remov() {
+      
+      if (this.innerHTML != EMPTY)
+       this.innerHTML = EMPTY;
+  }
 
 function save() {
     var itemsArray = []
