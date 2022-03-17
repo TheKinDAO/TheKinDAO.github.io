@@ -64,3 +64,19 @@ select {
   width: 140px;
   height: 60px;
 }
+
+
+@media screen and (max-width: 481px){
+  .container {
+    display: flex;
+    background: #b1ad84;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 80px;
+    min-height: 70px;
+    border-radius: 2%;
+    margin: auto;
+    font-size: 30px
+}
+}
