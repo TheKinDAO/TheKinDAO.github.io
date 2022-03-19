@@ -87,6 +87,7 @@ select {
 }
   
   #save {
+  position: static;
   font-size: 25px;
   width: 140px;
   height: 60px;
