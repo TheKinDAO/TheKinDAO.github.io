@@ -86,6 +86,11 @@ select {
     font-size: 30px
 }
   
+  form {
+    position: relative;
+    right: 100;
+}
+  
   #save {
   position: static;
   font-size: 25px;
