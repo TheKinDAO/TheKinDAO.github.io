@@ -67,7 +67,7 @@ select {
 
 @viewport {
   width: device-width ;
-  zoom: 0.5 ;
+  zoom: 1.0 ;
 }
 
 @media only screen and (max-width: 600px){
