@@ -65,3 +65,13 @@ select {
   height: 60px;
 }
 
+@media screen and (max-width:420px) {
+  #select {
+    position: relative;
+    left: 5px;
+    font-size: 30px;
+    min-width: 70px;
+    height: 500px;
+}
+}
+
