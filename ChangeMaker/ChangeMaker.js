@@ -5,6 +5,24 @@ var N_SIZE = 10,
     score,
     moves;
 
+document.addEventListener('keydown', keyDownHandler, false);
+document.addEventListener('keyup', keyUpHandler, false);
+
+var shiftPressed = false;
+
+function keyDownHandler(event) {
+    if(event.keyCode == 16) {
+        shiftPressed = true;
+    }
+}
+
+function keyupHandler(event) {
+    if(event.keyCode == 16) {
+        shiftPressed = false;
+    }
+}
+
+
 // Initialize the board and start the game.
 function init() {
     var board = document.createElement('table');
@@ -105,8 +123,9 @@ function set() {
 
   function remov() {
       
-      if (this.innerHTML != EMPTY)
+      if (shiftPressed = true) {
        this.innerHTML = EMPTY;
+  }
   }
 
 function save() {
