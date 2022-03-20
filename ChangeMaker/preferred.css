@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-.container {
+.container-sm {
     display: flex;
     background: #b1ad84;
     align-content: center;
@@ -73,21 +73,6 @@ select {
     font-size: 30px;
     min-width: 70px;
     height: 50px;
-}
-  
-  .container {
-    position: relative;
-    bottom: 200px;
-    display: flex;
-    background: #b1ad84;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 400px;
-    height: 365px;
-    border-radius: 2%;
-    margin: auto;
-    font-size: 30px
 }
   
 }
