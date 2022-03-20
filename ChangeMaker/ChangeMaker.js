@@ -5,7 +5,10 @@ var N_SIZE = 10,
     score,
     moves;
 
-document.addEventListener('keydown', keyDownHandler, false);
+// Initialize the board and start the game.
+function init() {
+    
+    document.addEventListener('keydown', keyDownHandler, false);
 document.addEventListener('keyup', keyUpHandler, false);
 
 function keyDownHandler(event) {
@@ -20,10 +23,7 @@ function keyupHandler(event) {
         shiftPressed = false;
     }
 }
-
-
-// Initialize the board and start the game.
-function init() {
+    
     var board = document.createElement('table');
     board.setAttribute('border', 1);
     board.setAttribute('cellspacing', 0);
