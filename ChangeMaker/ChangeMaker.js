@@ -8,9 +8,8 @@ var N_SIZE = 10,
 document.addEventListener('keydown', keyDownHandler, false);
 document.addEventListener('keyup', keyUpHandler, false);
 
-var shiftPressed = false;
-
 function keyDownHandler(event) {
+    var shiftPressed = false;
     if(event.keyCode == 16) {
         shiftPressed = true;
     }
