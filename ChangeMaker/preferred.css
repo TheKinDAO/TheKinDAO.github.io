@@ -72,7 +72,23 @@ select {
     left: 5px;
     font-size: 30px;
     min-width: 70px;
-    height: 500px;
+    height: 50px;
 }
+  
+  .container {
+    position: relative;
+    top: 10px;
+    display: flex;
+    background: #b1ad84;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 800px;
+    min-height: 730px;
+    border-radius: 2%;
+    margin: auto;
+    font-size: 30px
+}
+  
 }
 
