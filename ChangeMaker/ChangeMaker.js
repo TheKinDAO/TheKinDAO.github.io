@@ -4,6 +4,22 @@ var N_SIZE = 10,
     tile = '🌴',
     score,
     moves;
+document.addEventListener('keydown', keyDownHandler, false);
+document.addEventListener('keyup', keyUpHandler, false);
+
+var shiftPressed = false;
+
+function keyDownHandler(event) {
+    if(event.keyCode == 16) {
+        shiftPressed = true;
+    }
+}
+
+function keyupHandler(event) {
+    if(event.keyCode == 16) {
+        shiftPressed = true;
+    }
+}
 
 // Initialize the board and start the game.
 function init() {
