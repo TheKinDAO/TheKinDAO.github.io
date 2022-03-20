@@ -96,10 +96,12 @@ function set() {
     if (this.innerHTML !== EMPTY) {
         return;
     }
+    else{
     this.innerHTML = select.value;
     score[tile] += this.identifier;
     tile = select.value;
     document.getElementById('tile').textContent = tile;
+}
 }
 
 function save() {
