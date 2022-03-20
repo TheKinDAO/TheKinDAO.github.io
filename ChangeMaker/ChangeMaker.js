@@ -47,7 +47,6 @@ function init() {
             }
             cell.identifier = identifier;
             cell.addEventListener('click', set);
-            cell.addEventListener("dblclick", remov);
             row.appendChild(cell);
             boxes.push(cell);
             identifier += identifier;
@@ -118,14 +117,10 @@ function set() {
     score[tile] += this.identifier;
     tile = select.value;
     document.getElementById('tile').textContent = tile;
-}
-
-  function remov() {
-      
-      if (shiftPressed = true) {
+    elseif (shiftPressed = true) {
        this.innerHTML = EMPTY;
-  }
-  }
+         }
+}
 
 function save() {
     var itemsArray = []
