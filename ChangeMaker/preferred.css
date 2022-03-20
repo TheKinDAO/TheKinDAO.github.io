@@ -75,5 +75,18 @@ select {
     height: 50px;
 }
   
+  .container {
+    display: flex;
+    background: #b1ad84;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 900px;
+    max-height: 800px;
+    border-radius: 2%;
+    margin: auto;
+    font-size: 30px
+}
+  
 }
 
