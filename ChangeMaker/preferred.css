@@ -65,7 +65,7 @@ select {
   height: 60px;
 }
 
-@media all and (max-width:420px) {
+@media all and (max-width: 1080px) {
   
 select {
     position: relative;
