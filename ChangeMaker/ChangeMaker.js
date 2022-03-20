@@ -6,24 +6,7 @@ var N_SIZE = 10,
     moves;
 
 // Initialize the board and start the game.
-function init() {
-    
-    document.addEventListener('keydown', keyDownHandler, false);
-document.addEventListener('keyup', keyUpHandler, false);
-
-function keyDownHandler(event) {
-    var shiftPressed = false;
-    if(event.keyCode == 16) {
-        shiftPressed = true;
-    }
-}
-
-function keyupHandler(event) {
-    if(event.keyCode == 16) {
-        shiftPressed = false;
-    }
-}
-    
+function init() { 
     var board = document.createElement('table');
     board.setAttribute('border', 1);
     board.setAttribute('cellspacing', 0);
@@ -117,9 +100,6 @@ function set() {
     score[tile] += this.identifier;
     tile = select.value;
     document.getElementById('tile').textContent = tile;
-    elseif (shiftPressed = true) {
-       this.innerHTML = EMPTY;
-         }
 }
 
 function save() {
