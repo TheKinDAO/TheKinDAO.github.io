@@ -30,7 +30,7 @@ function init() {
             }
             cell.identifier = identifier;
             cell.addEventListener('click', set);
-            cell.addEventListener('click', remov);
+           
             row.appendChild(cell);
             boxes.push(cell);
             identifier += identifier;
@@ -105,12 +105,7 @@ function set() {
 }
 }
 
-functiion remov() {
-    
-    if (event.shiftKey) {
-    this.innerHTML = EMPTY;
-    }
-    }
+
 
 function save() {
     var itemsArray = []
