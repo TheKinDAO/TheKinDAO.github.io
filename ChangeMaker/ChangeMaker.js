@@ -30,6 +30,7 @@ function init() {
             }
             cell.identifier = identifier;
             cell.addEventListener('click', set);
+           
             row.appendChild(cell);
             boxes.push(cell);
             identifier += identifier;
@@ -103,6 +104,8 @@ function set() {
     document.getElementById('tile').textContent = tile;
 }
 }
+
+
 
 function save() {
     var itemsArray = []

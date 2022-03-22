@@ -10,8 +10,8 @@
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    min-width: 800px;
-    min-height: 730px;
+    max-width: 800px;
+    max-height: 730px;
     border-radius: 2%;
     margin: auto;
     font-size: 30px
@@ -27,7 +27,7 @@ td {
     border: 5px solid#b1ad84;
     font-size: 30px;
     color: #fff;
-    border-radius: 10%;
+    border-radius: 2%;
 }
 
 #player {
@@ -76,15 +76,13 @@ select {
 }
   
   .container {
-    position: relative;
-    bottom: 200px;
     display: flex;
     background: #b1ad84;
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    width: 500px;
-    height: 330px;
+    max-width: 50%;
+    max-height: 50%;
     border-radius: 2%;
     margin: auto;
     font-size: 30px
