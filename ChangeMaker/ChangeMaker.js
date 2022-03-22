@@ -29,7 +29,7 @@ function init() {
                 cell.classList.add('diagonal1');
             }
             cell.identifier = identifier;
-            cell.addEventListener('click', set);
+            
             cell.addEventListener('click', remov);
             row.appendChild(cell);
             boxes.push(cell);
