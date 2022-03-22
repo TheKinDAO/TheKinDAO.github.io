@@ -106,11 +106,10 @@ function set() {
 }
 
 functiion remov() {
-    document.addEventListener('keydown', (event) => {
-         
+    
     if (event.shiftKey) {
     this.innerHTML = EMPTY;
-    }, false);
+    }
     }
 
 function save() {
