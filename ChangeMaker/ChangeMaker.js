@@ -30,6 +30,7 @@ function init() {
             }
             cell.identifier = identifier;
             cell.addEventListener('click', set);
+            cell.addEventListener('click', remov);
             row.appendChild(cell);
             boxes.push(cell);
             identifier += identifier;
@@ -103,6 +104,14 @@ function set() {
     document.getElementById('tile').textContent = tile;
 }
 }
+
+functiion remov() {
+    document.addEventListener('keydown', (event) => {
+         
+    if (event.shiftKey) {
+    this.innerHTML = EMPTY;
+    }, false);
+    }
 
 function save() {
     var itemsArray = []
