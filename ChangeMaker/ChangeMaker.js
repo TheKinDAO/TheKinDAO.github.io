@@ -3,8 +3,7 @@ var N_SIZE = 10,
     boxes = [],
     tile = '🌴',
     score,
-    moves,
-    change-view = document.getElementById(change-view);
+    moves;
 
 // Initialize the board and start the game.
 function init() { 
@@ -93,6 +92,7 @@ function contains(selector, text) {
     });
 }
 
+
 // Set this box
 function set() {
     if (this.innerHTML !== EMPTY) {
@@ -107,7 +107,6 @@ function set() {
 }
 
 
-
 function save() {
     var itemsArray = []
     var i = 0;
@@ -117,5 +116,18 @@ function save() {
     });
     localStorage.setItem('items', JSON.stringify(itemsArray))
 }
+
+var change-view = document.getElementById(change-view);
+
+change-view.addEventListener('click', event => {
+    if (change-view.value = one) {
+        
+     boxes.forEach(function (box) {
+         box.innerHTML = EMPTY;
+     }
+    }
+                   false;
+    });
+
 
 init();
