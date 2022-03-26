@@ -81,7 +81,7 @@ select {
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 60%;
     max-height: 50%;
     border-radius: 2%;
     margin: auto;
