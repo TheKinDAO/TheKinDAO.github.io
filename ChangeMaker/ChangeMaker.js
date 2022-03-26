@@ -3,7 +3,8 @@ var N_SIZE = 10,
     boxes = [],
     tile = '🌴',
     score,
-    moves;
+    moves,
+    change-view = document.getElementById(change-view);
 
 // Initialize the board and start the game.
 function init() { 
