@@ -117,7 +117,17 @@ function save() {
     localStorage.setItem('items', JSON.stringify(itemsArray))
 }
 
+var change-view = document.getElementById(change-view);
 
+change-view.addEventListener('click', event => {
+    if (change-view.value = one) {
+        
+     boxes.forEach(function (box) {
+         box.innerHTML = EMPTY;
+     }
+    }
+                   false;
+    });
 
 
 init();
