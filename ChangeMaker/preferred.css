@@ -81,8 +81,8 @@ select {
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    max-width: 60%;
-    max-height: 50%;
+    max-width: 80%;
+    max-height: 70%;
     border-radius: 2%;
     margin: auto;
     font-size: 30px
