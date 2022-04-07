@@ -1,6 +1,7 @@
 var N_SIZE = 10,
     EMPTY = '&nbsp;',
     boxes = [],
+    boxez = [],
     tile = '🌴',
     score,
     moves;
@@ -97,7 +98,7 @@ function contains(selector, text) {
 
 
 // Set this box
-function set() {
+function set(e) {
     if (this.innerHTML !== EMPTY) {
         this.innerHTML = EMPTY;
         return;
@@ -107,7 +108,7 @@ function set() {
         score[tile] += this.identifier;
         tile = select.value;
     }
-    myFunk();
+    myFunk(e);
 }
     function views() {
         boxes.forEach(function (box) {
@@ -128,9 +129,10 @@ function set() {
 
 
 
-    function myFunk() {
+    function myFunk(e) {
         let ele = document.getElementById('history');
         let list = "";
+        let target = e.target;
         list += '<br>Diane placed:' + select.value;
         ele.innerHTML += list;
     }
