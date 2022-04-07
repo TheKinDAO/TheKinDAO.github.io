@@ -16,6 +16,7 @@ function init() {
         var row = document.createElement('tr');
         board.appendChild(row);
         for (var j = 0; j < N_SIZE; j++) {
+            var list = "";
             var cell = document.createElement('td');
             cell.setAttribute('height', 60);
             cell.setAttribute('width', 60);
@@ -30,14 +31,16 @@ function init() {
             }
             cell.identifier = identifier;
             cell.addEventListener('click', set);
-           
             row.appendChild(cell);
             boxes.push(cell);
             identifier += identifier;
+
         }
+
     }
 
     document.getElementById('changemaker').appendChild(board);
+
     startNewGame();
 }
 
@@ -96,25 +99,41 @@ function contains(selector, text) {
 // Set this box
 function set() {
     if (this.innerHTML !== EMPTY) {
+        this.innerHTML = EMPTY;
         return;
     }
-    else{
-    this.innerHTML = select.value;
-    score[tile] += this.identifier;
-    tile = select.value;
-    document.getElementById('tile').textContent = tile;
+    else {
+        this.innerHTML = select.value;
+        score[tile] += this.identifier;
+        tile = select.value;
+    }
+    myFunk();
 }
-}
+    function views() {
+        boxes.forEach(function (box) {
+            box.innerHTML = selectbox.value;
+        });
+        return;
+    }
+
+    function save() {
+        var itemsArray = []
+        var i = 0;
+        boxes.forEach(function (box) {
+            itemsArray[i] = box.innerHTML;
+            i++;
+        });
+        localStorage.setItem('items', JSON.stringify(itemsArray))
+    }
 
 
-function save() {
-    var itemsArray = []
-    var i = 0;
-    boxes.forEach(function (box) {
-        itemsArray[i] = box.innerHTML;
-        i++;
-    });
-    localStorage.setItem('items', JSON.stringify(itemsArray))
-}
 
-init();
+    function myFunk() {
+        let ele = document.getElementById('history');
+        let list = "";
+        list += '<br>Diane placed:' + select.value;
+        ele.innerHTML += list;
+    }
+
+    init();
+    
