@@ -1,36 +1,47 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" name="viewport"
-          content="width=device-width, initial-scale=0.5, minimum-scale=0.5 maximum-scale=0.5", user-scalable="no"/>
+<head>
+
+    <meta name="viewport" http-equiv="content-type" content="charset=UTF-8, width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no" />
     <title>Change Maker</title>
     <link rel="stylesheet" type="text/css" href="preferred.css" />
-  </head>
-  <body>
-    <a class="ext" href="https://TheKinDAO.com">The Kin DAO</a><br/>
+</head>
+<body>
+    <a class="ext" href="https://TheKinDAO.com">The Kin DAO</a><br />
     <div class="container">
-      <div id="changemaker"></div>
-      <div id="player" align="center">
-      </div>
+        <div id="changemaker"></div>
+        <div id="player" align="center">
+        </div>
     </div>
     <script type="text/javascript" src="ChangeMaker.js"></script>
-    
-       <form>
-      <header>Tiles</header>
-      <select name="2A" id="change-view" autocomplete="off">
-        <option id="one">1</option>
-        <option>2</option>
-      </select>
-    </form>
-    
-    <form>
-      <header>Tiles</header>
-      <select name="1A" id="select" autocomplete="off">
-        <option>🏠</option>
-        <option>🌴</option>
-        <option>🚽</option>
-        <option>🏭</option>
-      </select>
-    </form>
-    <button id="save" onclick="save()">Save</button>
-  </body>
+    <div id="menu2" align="center" value="1">
+        <button id="btn" onclick="views()">Set</button>
+        <button id="save" onclick="save()">Save</button>
+        <form>
+            <select name="2A" id="selectbox" autocomplete="off">
+                <option>📦</option>
+                <option>🔨</option>
+                <option>📃</option>
+                <option>💸</option>
+            </select>
+            <select name="1A" id="select" autocomplete="off">
+                <option>🏠</option>
+                <option>🌴</option>
+                <option>🚽</option>
+                <option>🏭</option>
+            </select>
+
+        </form>
+        <div id="history">
+        </div>
+    </div>
+    <div id="menu1" align="center">
+        <p id="map">
+            Map: Mariposa Ranch
+            <br>Available eC: 20/100 💸
+            <br>Wc in progress: 30/50 🔨
+
+        </p>
+    </div>
+
+</body>
 </html>
