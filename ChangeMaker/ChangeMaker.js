@@ -1,23 +1,16 @@
 var N_SIZE = 10,
     EMPTY = '&nbsp;',
-    boxes = [],
-    boxez = [],
-    tile = '🌴',
-    score,
-    moves;
+    pLayer = 0,
+    boxes = [];
 
 // Initialize the board and start the game.
 function init() { 
     var board = document.createElement('table');
-    board.setAttribute('border', 1);
-    board.setAttribute('cellspacing', 0);
-
     var identifier = 1;
     for (var i = 0; i < N_SIZE; i++) {
         var row = document.createElement('tr');
         board.appendChild(row);
         for (var j = 0; j < N_SIZE; j++) {
-            var list = "";
             var cell = document.createElement('td');
             cell.setAttribute('height', 60);
             cell.setAttribute('width', 60);
@@ -34,7 +27,7 @@ function init() {
             cell.addEventListener('click', set);
             row.appendChild(cell);
             boxes.push(cell);
-            identifier += identifier;
+            identifier++;
 
         }
 
@@ -47,12 +40,6 @@ function init() {
 
 // New game
 function startNewGame() {
-    score = {
-        '🌴': 0,
-        'O': 0
-    };
-    moves = 0;
-    tile = '🌴';
     // get from cookies if present
     var itemsArray = localStorage.getItem('items')
     const data = JSON.parse(localStorage.getItem('items'))
@@ -73,48 +60,22 @@ function startNewGame() {
     }
 }
 
-function win(clicked) {
-    // Get all cell classes
-    var memberOf = clicked.className.split(/\s+/);
-    for (var i = 0; i < memberOf.length; i++) {
-        var testClass = '.' + memberOf[i];
-        var items = contains('#tictactoe ' + testClass, tile);
-        // winning condition: tile == N_SIZE
-        if (items.length == N_SIZE) {
-            return true;
-        }
-    }
-    return false;
-}
-
-
-// Helper function to check if NodeList from selector has a particular text
-function contains(selector, text) {
-    var elements = document.querySelectorAll(selector);
-    return [].filter.call(elements, function (element) {
-        return RegExp(text).test(element.textContent);
-    });
-}
-
-
 // Set this box
-function set(e) {
+function set() {
     if (this.innerHTML !== EMPTY) {
         this.innerHTML = EMPTY;
         return;
     }
     else {
-        this.innerHTML = select.value;
-        score[tile] += this.identifier;
-        tile = select.value;
+        this.innerHTML = seLect.value;
     }
-    myFunk(e);
+    myFunk();
+    pLayer++;
 }
     function views() {
         boxes.forEach(function (box) {
             box.innerHTML = selectbox.value;
         });
-        return;
     }
 
     function save() {
@@ -129,11 +90,22 @@ function set(e) {
 
 
 
-    function myFunk(e) {
+function myFunk() {
         let ele = document.getElementById('history');
-        let list = "";
-        let target = e.target;
-        list += '<br>Diane placed:' + select.value;
+    let list = "";
+    if (pLayer == 0) {
+        list += '<br>Diane placed:' + seLect.value;
+    }
+    else if (pLayer == 1) {
+        list += '<br>Ricky placed:' + seLect.value;
+    }
+    else if (pLayer == 2) {
+        list += '<br>Joanna placed:' + seLect.value;
+    }
+    else if (pLayer == 3) {
+        list += '<br>Bobby placed:' + seLect.value;
+        pLayer = -1;
+    }
         ele.innerHTML += list;
     }
 
