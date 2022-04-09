@@ -116,21 +116,16 @@ select {
 }
 
 #history {
-    width: 200px;
-    height: 70px;
+    width: 195px;
+    height: 150px;
     padding: 10px;
     position: absolute;
     right: 5px;
-    top: 430px;
+    top: 350px;
     margin-top: 60px;
     padding: 1px;
     overflow-y: scroll;
     border: 2px solid gray;
-}
-
-#hist {
-    position: relative;
-    bottom: 15px;
 }
 
 @media all and (max-width: 1080px) {
