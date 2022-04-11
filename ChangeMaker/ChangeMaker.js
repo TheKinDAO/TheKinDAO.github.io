@@ -1,6 +1,14 @@
 var pLayer = 0,
-    boxes = [];
+    boxes = [],
+        biN = 0;
 const container = document.getElementById("container");
+
+document.addEventListener('mousedown', function() {
+        biN = 1
+    });
+    document.addEventListener('mouseup', function () {
+        biN = 0
+    });
 
 // Initialize the board and start the game.
 function init() { 
@@ -14,6 +22,15 @@ function init() {
             let cell = document.createElement("div");
             container.appendChild(cell).className = "grid-item";
             cell.addEventListener('click', set);
+            cell.addEventListener('mouseover', function() {
+                if (biN == 1) {
+                    cell.innerHTML = seLect.value;
+                }
+                cell.style.border = ".1px solid #C0C0C0";
+            });
+            cell.addEventListener('mouseout', function () {
+                cell.style.border = "none";
+            });
             boxes.push(cell);
 
         };
