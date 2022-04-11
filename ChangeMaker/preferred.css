@@ -27,6 +27,7 @@
     height: 20px;
     text-align: center;
     font-size: 12px;
+  user-select: none;
 }
 
 
