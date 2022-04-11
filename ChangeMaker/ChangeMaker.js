@@ -1,42 +1,32 @@
-var N_SIZE = 10,
-    EMPTY = '&nbsp;',
-    pLayer = 0,
+var pLayer = 0,
     boxes = [];
+const container = document.getElementById("container");
 
 // Initialize the board and start the game.
 function init() { 
     var board = document.createElement('table');
     var identifier = 1;
-    for (var i = 0; i < N_SIZE; i++) {
-        var row = document.createElement('tr');
-        board.appendChild(row);
-        for (var j = 0; j < N_SIZE; j++) {
-            var cell = document.createElement('td');
-            cell.setAttribute('height', 60);
-            cell.setAttribute('width', 60);
-            cell.setAttribute('align', 'center');
-            cell.setAttribute('valign', 'center');
-            cell.classList.add('col' + j, 'row' + i);
-            if (i == j) {
-                cell.classList.add('diagonal0');
-            }
-            if (j == N_SIZE - i - 1) {
-                cell.classList.add('diagonal1');
-            }
-            cell.identifier = identifier;
+
+    function makeRows(rows, cols) {
+        container.style.setProperty('--grid-rows', rows);
+        container.style.setProperty('--grid-cols', cols);
+        for (c = 0; c < (rows * cols); c++) {
+            let cell = document.createElement("div");
+            container.appendChild(cell).className = "grid-item";
             cell.addEventListener('click', set);
-            row.appendChild(cell);
             boxes.push(cell);
-            identifier++;
 
-        }
+        };
+    };
 
-    }
+    makeRows(30, 30);
 
     document.getElementById('changemaker').appendChild(board);
 
     startNewGame();
+
 }
+
 
 // New game
 function startNewGame() {
@@ -55,15 +45,15 @@ function startNewGame() {
     }
     else {
         boxes.forEach(function (box) {
-            box.innerHTML = EMPTY;
+            box.innerHTML = "";
         });
     }
 }
 
 // Set this box
 function set() {
-    if (this.innerHTML !== EMPTY) {
-        this.innerHTML = EMPTY;
+    if (this.innerHTML !== "") {
+        this.innerHTML = "";
         return;
     }
     else {
