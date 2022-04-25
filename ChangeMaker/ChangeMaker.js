@@ -38,8 +38,6 @@ function init() {
 
     makeRows(30, 30);
 
-    document.getElementById('changemaker').appendChild(board);
-
     startNewGame();
 
 }
