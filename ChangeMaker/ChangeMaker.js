@@ -21,6 +21,7 @@ function init() {
         for (c = 0; c < (rows * cols); c++) {
             let cell = document.createElement("div");
             container.appendChild(cell).className = "grid-item";
+            cell.innerHTML = "";
             cell.addEventListener('click', set);
             cell.addEventListener('mouseover', function() {
                 if (biN == 1) {
