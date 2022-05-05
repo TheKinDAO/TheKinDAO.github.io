@@ -11,23 +11,47 @@
 
 #container {
     display: grid;
-    row-gap : 0px;
+    row-gap: 0px;
     column-gap: 0px;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     position: absolute;
     left: 370px;
     top: 75px;
-      border: .1px solid #C0C0C0;
+    border: .1px solid #C0C0C0;
+}
 
+#container2 {   
+    position: absolute;
+    width: 602px;
+    height: 602px;
+    left: 370px;
+    top: 75px;
+    border: .1px solid #C0C0C0;
+    visibility: hidden;
+}
+
+#fname {
+    position: absolute;
+    top: 75px;
+    left: 200px;
+    text-align: center;
+}
+
+#lname {
+    position: absolute;
+    top: 75px;
+    left: 200px;
+    text-align: center;
+    visibility: hidden;
 }
 
 .grid-item {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     text-align: center;
-    font-size: 12px;
-  user-select: none;
+    font-size: 8px;
+    user-select: none;
 }
 
 
@@ -46,19 +70,19 @@ form {
     top: 50px;
 }
 
-select {
-    position: relative;
-    bottom: 40px;
-    left: 50px;
-    font-size: 30px;
-    min-width: 70px;
-    height: 50px;
-}
+    select {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        font-size: 30px;
+        min-width: 70px;
+        height: 50px;
+    }
 
 #save {
-    position: relative;
-    left: 2px;
-    top: 130px;
+    position: absolute;
+    left: 500px;
+    bottom: 50px;
     font-size: 25px;
     width: 70px;
     height: 40px;
@@ -66,10 +90,10 @@ select {
     font-family: "Lucida Console", monospace;
 }
 
-#btn {
-    position: relative;
-    left: 2px;
-    top: 130px;
+#set {
+    position: absolute;
+    left: 650px;
+    bottom: 50px;
     font-size: 25px;
     width: 70px;
     height: 40px;
@@ -104,7 +128,19 @@ select {
     margin-top: 60px;
     position: absolute;
     left: 1000px;
-    bottom: 80px;
+    top: 20px;
+}
+
+#menuClone {
+    width: 220px;
+    height: 600px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin-top: 60px;
+    position: absolute;
+    left: 1000px;
+    top: 20px;
+    visibility: hidden;
 }
 
 #history {
@@ -120,15 +156,9 @@ select {
     border: 2px solid gray;
 }
 
-@media all and (max-width: 1080px) {
 
-    select {
-        position: relative;
-        left: 5px;
-        font-size: 30px;
-        min-width: 70px;
-        height: 50px;
-    }
+#map {
+    height: 100%;
 }
 
 
