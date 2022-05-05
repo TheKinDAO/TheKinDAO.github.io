@@ -1,37 +1,42 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 
-    <meta name="viewport" http-equiv="content-type" content="charset=UTF-8, width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no" />
+    <meta name="viewport" http-equiv="content-type" charset= UTF-8, width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no />
     <title>Change Maker</title>
     <link rel="stylesheet" type="text/css" href="preferred.css" />
 </head>
 <body>
     <a class="ext" href="https://TheKinDAO.com">The Kin DAO</a><br />
 
-    <div id="container"></div>
 
+    <div id="container">
+    </div>
+
+    <div id="container2">
+        <input type="text" id="fname"><br>
+        <input type="text" id="lname"><br>
+
+    </div>
     <script type="text/javascript" src="ChangeMaker.js"></script>
+    <div id="menuClone" align="center">
+        <button id="contract1" onclick="contract1()">Land contract</button>
+        <button id="contract2" onclick="contract2()">Work contract</button>
+    </div>
     <div id="menu2" align="center" value="1">
-        <button id="btn" onclick="views()">Set</button>
-        <button id="save" onclick="save()">Save</button>
         <form>
-            <select name="2A" id="selectbox" autocomplete="off">
-                <option>📦</option>
-                <option>🔨</option>
-                <option>📃</option>
-                <option>💸</option>
-            </select>
             <select name="1A" id="seLect" autocomplete="off">
-                <option>🏠</option>
-                <option>🌴</option>
-                <option>💧</option>
-                <option>🏭</option>
+                <option id="one">🏠</option>
+                <option id="two">🌴</option>
+                <option id="three">💧</option>
+                <option id="four">🏭</option>
             </select>
 
         </form>
         <div id="history">
         </div>
     </div>
+    <button id="save" onclick="save()">Save</button>
+    <button id="set" onclick="set()">Set</button>
     <div id="menu1" align="center">
         <p id="map">
             Map: Mariposa Ranch
