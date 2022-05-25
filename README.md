@@ -1,1 +1,1 @@
-https://thekindao.github.io/ChangeMaker/index.html
+[TheKinDAO.github.io](TheKinDAO.github.io)
