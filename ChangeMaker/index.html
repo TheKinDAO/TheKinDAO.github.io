@@ -1,49 +1,50 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-
-    <meta name="viewport" http-equiv="content-type" charset= UTF-8, width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no />
+    <meta name="viewport" http-equiv="content-type" charset=UTF-8, width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no />
     <title>Change Maker</title>
     <link rel="stylesheet" type="text/css" href="preferred.css" />
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 <body>
-    <a class="ext" href="https://TheKinDAO.com">The Kin DAO</a><br />
-
+    <section class="u-clearfix u-section-1" id="sec-d1d9">
+        <div class="u-clearfix u-sheet u-sheet-1">
+        </div>
+    </section>
 
     <div id="container">
     </div>
 
-    <div id="container2">
-        <input type="text" id="fname"><br>
-        <input type="text" id="lname"><br>
-
+    <div class="img-zoom-container">
+        <img id="myimage" src="Miranda.png" width="300" height="240" alt="Land">
+        <div id="myresult" class="img-zoom-result"></div>
     </div>
     <script type="text/javascript" src="ChangeMaker.js"></script>
-    <div id="menuClone" align="center">
-        <button id="contract1" onclick="contract1()">Land contract</button>
-        <button id="contract2" onclick="contract2()">Work contract</button>
-    </div>
     <div id="menu2" align="center" value="1">
         <form>
             <select name="1A" id="seLect" autocomplete="off">
-                <option id="one">🏠</option>
-                <option id="two">🌴</option>
-                <option id="three">💧</option>
-                <option id="four">🏭</option>
+                <option class="option">🌳</option>
+                <option class="option">🌻</option>
+                <option class="option">⛲</option>
+                <option class="option">🛀</option>
+                <option class="option">🚽</option>
+                <option class="option">🛌</option>
+                <option class="option">🍴</option>
+                <option class="option">🏠</option>
+                <option class="option">🧭</option>
+                <option class="option">⛪</option>
+                <option class="option">🚵‍</option>
+                <option class="option">🧘</option>
+                <option class="option">🥂</option>
+                <option class="option">🎪</option>
             </select>
 
         </form>
         <div id="history">
         </div>
     </div>
-    <button id="save" onclick="save()">Save</button>
-    <button id="set" onclick="set()">Set</button>
     <div id="menu1" align="center">
-        <p id="map">
-            Map: Mariposa Ranch
-            <br>Available eC: 20/100 💸
-            <br>Wc in progress: 30/50 🔨
-
-        </p>
+        <button id="griD" onclick="griD()">Grid</button>
     </div>
 
 </body>
