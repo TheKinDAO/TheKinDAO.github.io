@@ -9,7 +9,44 @@
     --grid-rows: 1;
 }
 
+.img-zoom-container {
+    position: absolute;
+    left: 450px;
+    bottom: 100px;
+}
+
+.img-zoom-lens {
+    position: absolute;
+    /*set the size of the lens:*/
+    width: 40px;
+    height: 40px;
+}
+
+.img-zoom-result {
+    border: 1px solid #d4d4d4;
+    /*set the size of the result div:*/
+    width: 300px;
+    height: 300px;
+}
+
+#myimage {
+    position: absolute;
+    bottom: -8px;
+    left: -20px;
+    width: 485px;
+    height: 580px;
+}
+
+#myresult {
+    position: absolute;
+    left: 800px;
+    bottom: 100px;
+    width: 150px;
+    height: 150px;
+}
+
 #container {
+
     display: grid;
     row-gap: 0px;
     column-gap: 0px;
@@ -18,45 +55,68 @@
     position: absolute;
     left: 370px;
     top: 75px;
-    border: .1px solid #C0C0C0;
+    border: 3px solid black;
 }
 
-#container2 {   
-    position: absolute;
-    width: 602px;
-    height: 602px;
-    left: 370px;
-    top: 75px;
-    border: .1px solid #C0C0C0;
-    visibility: hidden;
-}
+w
 
 #fname {
     position: absolute;
     top: 75px;
     left: 200px;
     text-align: center;
+    visibility: hidden;
 }
 
 #lname {
     position: absolute;
     top: 75px;
-    left: 200px;
+    left: 100px;
+    width: 70px;
     text-align: center;
+}
+
+#p1 {
+    position: absolute;
+    top: 75px;
+    left: 190px;
+}
+
+#landIn {
+    position: absolute;
+    top: 75px;
+    left: 270px;
+    width: 70px;
+}
+
+#p2 {
+    position: absolute;
+    top: 75px;
+    left: 370px;
+}
+
+#p4{
     visibility: hidden;
 }
 
+#kname {
+    position: absolute;
+    top: 75px;
+    left: 400px;
+    width: 70px;
+}
+
 .grid-item {
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     text-align: center;
-    font-size: 8px;
+    font-size: 20px;
     user-select: none;
 }
 
 
 .ext {
-    font-family: "Lucida Console", monospace;
+    font-family: "Press Start 2P", monospace;
 }
 
 
@@ -74,74 +134,32 @@ form {
         position: absolute;
         top: 0px;
         right: 10px;
-        font-size: 30px;
-        min-width: 70px;
+        font-size: 70px;
+        width: 70px;
         height: 50px;
     }
-
-#save {
-    position: absolute;
-    left: 500px;
-    bottom: 50px;
-    font-size: 25px;
-    width: 70px;
-    height: 40px;
-    margin: 0;
-    font-family: "Lucida Console", monospace;
-}
-
-#set {
-    position: absolute;
-    left: 650px;
-    bottom: 50px;
-    font-size: 25px;
-    width: 70px;
-    height: 40px;
-    margin: 0;
-    font-family: "Lucida Console", monospace;
-}
-
 #menu1 {
     width: 240px;
     height: 600px;
     padding: 10px;
-    border: 5px solid gray;
+    border: 3px solid black;
     margin-top: 60px;
     position: absolute;
     left: 100px;
     top: 20px;
 }
-
-#map {
-    position: relative;
-    top: 30px;
-    line-height: 45px;
-    font-family: "Lucida Console", monospace;
-    font-size: 14px;
-}
-
 #menu2 {
     width: 220px;
     height: 600px;
     padding: 10px;
-    border: 5px solid gray;
+    border: 3px solid black;
     margin-top: 60px;
     position: absolute;
     left: 1000px;
     top: 20px;
 }
 
-#menuClone {
-    width: 220px;
-    height: 600px;
-    padding: 10px;
-    border: 5px solid gray;
-    margin-top: 60px;
-    position: absolute;
-    left: 1000px;
-    top: 20px;
-    visibility: hidden;
-}
+
 
 #history {
     width: 195px;
@@ -153,12 +171,20 @@ form {
     margin-top: 60px;
     padding: 1px;
     overflow-y: scroll;
-    border: 2px solid gray;
+    border: 2px solid black;
+    font-size: 10px;
 }
 
-
-#map {
-    height: 100%;
+.u-section-1 .u-sheet-1 {
+    min-height: 500px;
 }
 
+.u-section-1 .u-image-1 {
+    width: 570px;
+    height: 666px;
+    margin: 20px auto 60px;
+    position: absolute;
+    right: 580px;
+
+}
 
